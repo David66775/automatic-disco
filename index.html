@@ -56,7 +56,7 @@ font-family: sans-serif;
 <textarea id = "Output" placeholder = "Output"></textarea>
 <textarea type = "text" id = "StringBasis" placeholder = "Input: Do not leave blank."></textarea>
 <input type = "text" id = "xstart" placeholder = "X starting value"> <input type = "text" id = "XIncrement" placeholder = "X increment"> <input type = "text" id = "ystart" placeholder = "Y starting value"> <input type = "text" id = "YIncrement" placeholder = "Y increment">
-<button onclick = "run()" id = "runbutton">Run</button> <button onclick = "stop()" id = "stopbutton">Stop</button> <button id = "rep" onclick = "rep()">Activate Template Literal Processing</button>
+<button onclick = "run()" id = "runbutton">Run</button> <button onclick = "stop()" id = "stopbutton">Stop</button>
 </pre>
 <pre id = "docs">
 Dunerise was old and broke. This is new and will not break anytime soon.
@@ -92,12 +92,8 @@ const Interval = window.setInterval(GeneralRendering, 50);
 function stop() {
 freezed = true;
 }
-function rep() {
-replacement = true;
-}
 function GeneralRendering() {
 if (freezed === false) {
-if (replacement === true) {
 string = string.replace("${x}", `${xplaceholder}`);
 string = string.replace("${y}", `${yplaceholder}`);
 string = string.replace("${x}", `${xplaceholder}`);
@@ -2014,7 +2010,6 @@ string = string.replace("${x}", `${xplaceholder}`);
 string = string.replace("${y}", `${yplaceholder}`);
 string = string.replace("${x}", `${xplaceholder}`);
 string = string.replace("${y}", `${yplaceholder}`);
-};
 GOP.value += `${string}\n`;
 xplaceholder += xincrement;
 yplaceholder += yincrement;
