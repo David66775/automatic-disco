@@ -7,7 +7,7 @@
 
 <style>
 #Output {
-width: 1200px;
+width: 99%;
 height: 200px;
 font-family: sans-serif;
 }
@@ -16,7 +16,7 @@ background-color: black;
 color: goldenrod;
 }
 #StringBasis {
-width: 1200px;
+width: 99%;
 height: 100px;
 font-family: monospace;
 }
@@ -55,7 +55,8 @@ font-family: sans-serif;
 <pre>
 <textarea id = "Output" placeholder = "Output"></textarea>
 <textarea type = "text" id = "StringBasis" placeholder = "Input: Do not leave blank."></textarea>
-<input type = "text" id = "xstart" placeholder = "A starting value"> <input type = "text" id = "XIncrement" placeholder = "A increment"> <input type = "text" id = "ystart" placeholder = "B starting value"> <input type = "text" id = "YIncrement" placeholder = "B increment"><input type = "text" id = "cstart" placeholder = "C starting value"> <input type = "text" id = "CIncrement" placeholder = "C increment"> <input type = "text" id = "dstart" placeholder = "D starting value"> <input type = "text" id = "DIncrement" placeholder = "B increment">
+<input type = "text" id = "xstart" placeholder = "X starting value"> <input type = "text" id = "XIncrement" placeholder = "X increment"> <input type = "text" id = "ystart" placeholder = "Y starting value"> <input type = "text" id = "YIncrement" placeholder = "Y increment"> <input type = "text" id = "zstart" placeholder = "Z starting value"> <input type = "text" id = "ZIncrement" placeholder = "Z increment">
+<input type = "text" id = "cstart" placeholder = "C starting value"> <input type = "text" id = "CIncrement" placeholder = "C increment"> <input type = "text" id = "dstart" placeholder = "D starting value"> <input type = "text" id = "DIncrement" placeholder = "B increment">
 <button onclick = "run()" id = "runbutton">Run</button> <button onclick = "stop()" id = "stopbutton">Stop</button>
 </pre>
 <pre id = "docs">
@@ -75,6 +76,8 @@ const STO = document.getElementById("StringBasis");
 const CIE = document.getElementById("CIncrement");
 const DSE = document.getElementById("dstart");
 const DIE = document.getElementById("DIncrement");
+const ZSE = document.getElementById("zstart");
+const ZIE = document.getElementById("ZIncrement");
 const CSE = document.getElementById("cstart");
 const GOP = document.getElementById("Output");
 let freezed = null;
@@ -87,6 +90,8 @@ let cplaceholder;
 let cincrement;
 let dplaceholder;
 let dincrement;
+let zplaceholder;
+let zincrement;
 let replacement = false;
 function run() {
 xplaceholder = Number(`${XSE.value}`);
@@ -139,6 +144,135 @@ string = string.replace("${d}", `${dplaceholder}`);
 string = string.replace("${c}", `${cplaceholder}`);
 string = string.replace("${d}", `${dplaceholder}`);
 string = string.replace("${c}", `${cplaceholder}`);
+
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
+string = string.replace("${z}", `${zplaceholder}`);
 
 string = string.replace("${c}", `${cplaceholder}`);
 string = string.replace("${d}", `${dplaceholder}`);
