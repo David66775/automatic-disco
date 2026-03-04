@@ -56,7 +56,7 @@ font-family: sans-serif;
 <textarea id = "Output" placeholder = "Output"></textarea>
 <textarea type = "text" id = "StringBasis" placeholder = "Input: Do not leave blank."></textarea>
 <input type = "text" id = "xstart" placeholder = "X starting value"> <input type = "text" id = "XIncrement" placeholder = "X increment"> <input type = "text" id = "ystart" placeholder = "Y starting value"> <input type = "text" id = "YIncrement" placeholder = "Y increment"> <input type = "text" id = "zstart" placeholder = "Z starting value"> <input type = "text" id = "ZIncrement" placeholder = "Z increment">
-<input type = "text" id = "cstart" placeholder = "C starting value"> <input type = "text" id = "CIncrement" placeholder = "C increment"> <input type = "text" id = "dstart" placeholder = "D starting value"> <input type = "text" id = "DIncrement" placeholder = "B increment">
+<input type = "text" id = "cstart" placeholder = "C starting value"> <input type = "text" id = "CIncrement" placeholder = "C increment"> <input type = "text" id = "dstart" placeholder = "D starting value"> <input type = "text" id = "DIncrement" placeholder = "D increment">
 <button onclick = "run()" id = "runbutton">Run</button> <button onclick = "stop()" id = "stopbutton">Stop</button>
 </pre>
 <pre id = "docs">
@@ -102,6 +102,8 @@ cplaceholder = Number(`${CSE.value}`);
 dplaceholder = Number(`${DSE.value}`);
 cincrement = Number(`${CIE.value}`);
 dincrement = Number(`${DIE.value}`);
+zplaceholder = Number(`${ZSE.value}`);
+zincrement = Number(`${ZIE.value}`);
 freezed = false;
 string = STO.value;
 const Interval = window.setInterval(GeneralRendering, 50);
